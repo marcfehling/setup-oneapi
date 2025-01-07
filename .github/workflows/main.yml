@@ -47,9 +47,9 @@ jobs:
       uses: ./
       with:
         components: |
-          icx
           ifx
           impi
+          mkl
     - name: Build/run
       run: |
         cmake -B build -DENABLE_COMPILERS=on test
